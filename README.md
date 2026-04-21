@@ -1,4 +1,4 @@
-# 🚀 Ichnos
+# Ichnos
 
 ![Status](https://img.shields.io/badge/status-en%20desarrollo-yellow)
 ![Backend](https://img.shields.io/badge/backend-Spring%20Boot-brightgreen)
@@ -45,10 +45,10 @@ Esto genera errores, retrabajo y baja eficiencia.
 
 Ichnos introduce un enfoque basado en ***eventos***, donde cada acción queda registrada.
 
-- ✔ Trazabilidad total  
-- ✔ Evidencia documentada  
-- ✔ Historial reutilizable  
-- ✔ Mejora continua basada en datos  
+- Trazabilidad total  
+- Evidencia documentada  
+- Historial reutilizable  
+- Mejora continua basada en datos  
 
 ---
 
@@ -127,14 +127,95 @@ Cada ticket contiene un historial completo:
 
 ---
 
-## 🧱 Arquitectura
-backend/
-├── controller
-├── service
-├── repository
-├── entity
-├── dto
-└── config
+## Arquitectura
+/
+├── backend/                # Spring Boot API
+│   ├── controller/         # Endpoints REST y manejo de peticiones HTTP
+│   ├── service/            # Lógica de negocio y reglas del sistema
+│   ├── repository/         # Interacción con la base de datos (Spring Data JPA)
+│   ├── entity/             # Modelos de datos (Tablas de BD)
+│   ├── dto/                # Objetos de Transferencia de Datos (Data Transfer Objects)
+│   └── config/             # Configuraciones globales (Seguridad, CORS, Beans)
+├── frontend/               # Interfaz de usuario
+│   └── react-app/          # Aplicación SPA con React
+└── README.md
 
-frontend/
-└── react-app
+
+---
+
+## Flujo de trabajo
+
+1. Crear ticket  
+2. Seleccionar cliente / sede / contacto  
+3. Registrar intentos de contacto  
+4. Documentar respuesta  
+5. Ejecutar intervención técnica  
+6. Adjuntar evidencia  
+7. Resolver y cerrar  
+
+Todo queda registrado como eventos.
+
+---
+
+## Seguridad
+
+- Ejecución local (offline-first)  
+- Sin exposición a internet  
+- Manejo seguro de archivos  
+- Preparado para autenticación futura  
+
+---
+
+##  Roadmap
+
+- [x] Definición de arquitectura  
+- [ ] Backend (Spring Boot)  
+- [ ] Modelo de datos completo  
+- [ ] API REST  
+- [ ] Frontend (React)  
+- [ ] Timeline visual  
+- [ ] Módulo de evidencias  
+- [ ] Dashboard  
+
+---
+
+##  Demo
+
+***Próximamente***
+
+---
+
+##  Filosofía
+
+> “No se trata solo de resolver tickets,  
+> sino de entender todo lo que ocurrió en ellos
+> para tener herramientas para el futuro.”
+
+---
+
+##  Estado
+
+- En desarrollo activo  
+- Arquitectura definida  
+
+---
+
+## Autor
+
+Proyecto desarrollado como solución a problemas reales de soporte técnico, con enfoque en trazabilidad, control y mejora continua.
+
+---
+
+## Licencia
+
+MIT License
+
+---
+
+## Contribuciones
+
+- Puedes abrir un issue  
+- Proponer mejoras  
+- Compartir ideas  
+
+---
