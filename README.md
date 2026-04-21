@@ -128,18 +128,20 @@ Cada ticket contiene un historial completo:
 ---
 
 ## Arquitectura
-/
-├── backend/                # Spring Boot API
-│   ├── controller/         # Endpoints REST y manejo de peticiones HTTP
-│   ├── service/            # Lógica de negocio y reglas del sistema
-│   ├── repository/         # Interacción con la base de datos (Spring Data JPA)
-│   ├── entity/             # Modelos de datos (Tablas de BD)
-│   ├── dto/                # Objetos de Transferencia de Datos (Data Transfer Objects)
-│   └── config/             # Configuraciones globales (Seguridad, CORS, Beans)
+```text
+.
+├── backend/                # API REST con Spring Boot
+│   ├── controller/         # Endpoints y manejo de peticiones
+│   ├── service/            # Lógica de negocio
+│   ├── repository/         # Persistencia de datos (JPA)
+│   ├── entity/             # Entidades de base de datos
+│   ├── dto/                # Objetos de transferencia de datos
+│   └── config/             # Configuraciones del sistema
 ├── frontend/               # Interfaz de usuario
-│   └── react-app/          # Aplicación SPA con React
+│   └── react-app/          # SPA con React.js
 └── README.md
-
+\
+```
 
 ---
 
